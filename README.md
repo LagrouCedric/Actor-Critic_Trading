@@ -18,8 +18,7 @@
 #### -- Simple Moving Average (SMA)
 #### -- Moving Average Convergence Divergence (MACD)
 ####
-#### MACD Formula
-#### MACD=12-Period EMA − 26-Period EMA
+#### MACD Formula: MACD=12-Period EMA − 26-Period EMA
 #### These are calculated in the environment and put into the dataframe
 
 ## Researching Reward System
@@ -41,3 +40,18 @@
 
 
 # Agent
+
+## Agent choice
+#### To choose a good reinforcement learning agent, i started with a simple implementation of a DQN agent and an actor critic.
+#### The actor critic quickly learned a couple things, whilst the DQN was doing overfitting on one action or randomly picking things, it didn't learn well / quick enough to use this as an agent for this project.
+
+#### The actor critic performed well, so i went on with the development of that certain agent
+
+## agent explained
+#### the actor critic is split into 3 networks: 'Policy', 'Actor' and 'Critic'
+#### simply said, the policy choses an action by having an actor picking an action he thinks is best and a critic network evaluating that certain action the actor picked
+
+## saving the agent
+#### I can easily save the 3 models in a folder by using the keras save ( & load) build in functions
+
+## training the model
