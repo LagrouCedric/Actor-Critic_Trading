@@ -55,3 +55,4 @@
 #### I can easily save the 3 models in a folder by using the keras save ( & load) build in functions
 
 ## training the model
+#### the model itself get trained on the environment with a maxIterations and a number of episodes at a time, we also save some data to make some visals in the end to show the progress of our model and to see where it bought and sold
