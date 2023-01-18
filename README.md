@@ -46,6 +46,7 @@
 ## Agent choice
 #### To choose a good reinforcement learning agent, i started with a simple implementation of a DQN agent and an actor critic.
 #### The actor critic quickly learned a couple things, whilst the DQN was doing overfitting on one action or randomly picking things, it didn't learn well / quick enough to use this as an agent for this project.
+#### for the remainder of this project I will not focus on the DQN implementation, because the training time will make it harder to create and actor critic is an overal better option to use in this case
 
 #### The actor critic performed well, so i went on with the development of that certain agent
 
