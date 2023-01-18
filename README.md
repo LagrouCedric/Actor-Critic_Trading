@@ -45,6 +45,7 @@
 
 ## Agent choice
 #### To choose a good reinforcement learning agent, i started with a simple implementation of a DQN agent and an actor critic.
+#### explained: https://medium.com/intro-to-artificial-intelligence/the-actor-critic-reinforcement-learning-algorithm-c8095a655c14
 #### The actor critic quickly learned a couple things, whilst the DQN was doing overfitting on one action or randomly picking things, it didn't learn well / quick enough to use this as an agent for this project.
 #### for the remainder of this project I will not focus on the DQN implementation, because the training time will make it harder to create and actor critic is an overal better option to use in this case
 
@@ -60,3 +61,14 @@
 ## training the model
 #### the model itself get trained on the environment with a maxIterations and a number of episodes at a time, we also save some data to make some visals in the end to show the progress of our model and to see where it bought and sold
 #### The training is then evaluated in a shorter 'Demo' testset, to see if how it scores, the testset is chosen so it has the opportunity to make some good profits and to check where it bought and sold.
+
+## Model problems
+### Overfitting
+#### One of the biggest problems i had in the beginning was overfitting to one of the 3 actions: E.g. the model always predicted 'Hold'.
+#### To prevent this the reward system had to be tweaked and changed, the overfitted class had a reduction in reward so it balanced the other actions, until i had a model with probabilities that were usable.
+
+### Training time
+#### another big factor in reinforcement learning is training time, it takes at least 30minutes to run an episode and to learn from it, so the model needs hours before it reaches a state in which it learned how to decently trade crypto
+
+### hardware restrictions
+#### due to me using a laptop 16GB RAM in this project, this lead to me having to fine tweak some things, to optimally run this project and to train it, due to the RAM restriction i had to rerun, because VSCode crashed a couple of times. Better hardware could lead to faster training time, but it worked with the hardware I had to get a baseline to see if it is possible to make a reinforcement agent to trade crypto
