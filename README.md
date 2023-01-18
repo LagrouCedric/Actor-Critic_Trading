@@ -5,6 +5,7 @@
 #### ToDo
 
 # Environment
+#### based on: https://medium.com/coinmonks/deep-reinforcement-learning-for-trading-cryptocurrencies-5b5502b1ece1
 ## Features
 ### full Feature list:
 #### 'open', 'High', 'Low', 'CLose', 'Invested money', 'non-invested', 'invested_amount of crypto', 'Unix Time', 'MACD', 'SMA60K', 'SMA30K', 'LastBuy', 'LastSold', 'LastBuyPrice', 'LastSoldPrice' 
@@ -19,18 +20,19 @@
 #### -- Moving Average Convergence Divergence (MACD)
 ####
 #### MACD Formula: MACD=12-Period EMA − 26-Period EMA
-#### These are calculated in the environment and put into the dataframe
+#### These are calculated in the environment and put into the dataframe for quicker use during the training
+####
+#### Last of we also give the information when the model last bought and sold and the prices of those, so he can focus on getting good results
 
 ## Researching Reward System
-##
-### The reward is split into 3 parts: 'Hold', 'Buy' and 'Sell'
+#### The reward is split into 3 parts ( the actions ): 'Hold', 'Buy' and 'Sell'
 
 ### HOLD: 
 #### in the holding part, we check if the chosen action == 0 ( hold), and we always give a negative reward of 25 to reduce overfiting to action 0 ( that happened when reward was '0')
 
 ### Buy:
-#### First we check if the current invested money is more than 15.000, 75% of our initial investment
-#### Secondly we check if one of our latest actions was a buy or sell, because we want the AI to know not to sell immediatly
+#### First we check if the current invested money is more than 75% of our current worth e.g. worth = 20.000 --> max invested = 15.000
+#### Secondly we check if one of our latest actions was a buy or sell, because we want the AI to know not to sell immediatly or buy everything at once without thinking it's a good buy 
 #### If in one of the steps the action doesn't meet the requirement, we return a negative reward, otherwise we Buy and return a postive reward
 
 ### Sell:
@@ -56,3 +58,4 @@
 
 ## training the model
 #### the model itself get trained on the environment with a maxIterations and a number of episodes at a time, we also save some data to make some visals in the end to show the progress of our model and to see where it bought and sold
+#### The training is then evaluated in a shorter 'Demo' testset, to see if how it scores, the testset is chosen so it has the opportunity to make some good profits and to check where it bought and sold.
