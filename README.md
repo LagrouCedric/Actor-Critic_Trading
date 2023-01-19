@@ -12,6 +12,7 @@
 
 ### Why these features?
 #### I used the OHLC as features, because that's what represents the price of the currency at a certain time. The model can use this to help predict a good action for this timestamp.
+![](./pics/OHCL.png)
 
 #### We also have some calculated features, this article helped me with some of them
 #### https://academy.swissborg.com/en/learn/crypto-trading-indicators
