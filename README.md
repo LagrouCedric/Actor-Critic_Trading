@@ -73,3 +73,11 @@
 
 ### hardware restrictions
 #### due to me using a laptop 16GB RAM in this project, this lead to me having to fine tweak some things, to optimally run this project and to train it, due to the RAM restriction i had to rerun, because VSCode crashed a couple of times. Better hardware could lead to faster training time, but it worked with the hardware I had to get a baseline to see if it is possible to make a reinforcement agent to trade crypto
+
+# Community
+#### I also checked out how the community was doing arround crypto and specifically trading bots.
+#### I checked this reddit: https://www.reddit.com/r/algotrading/comments/y31xce/does_your_crypto_trading_bot_still_make_money_in/
+#### most people were not happy with the way trading bots are handling current situation, it's a hard time for cryptocurrencies and with that bots became more instable and less profitable.
+#### The more famous types like grid-trading, etc still work by the same principles, but the way the cryptoworld is changing the profits are less then before
+####
+#### Reinforcement learning is a hard topic in the community, not a lot of people share specific things about crypto bots they made, the more traditional bots are still being talked about though.
