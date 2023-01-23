@@ -174,7 +174,25 @@
 #### the code is split into a couple functions
 ### build actor critic network
 ```{python}
+def build_actor_critic_network(self):
+    NN_input = Input(shape=(self.input_dims,))
+    delta = Input(shape=[1])
+    dense1 = Dense(self.fc1_dims, activation='relu')(NN_input)
+    dense2 = Dense(self.fc2_dims, activation='relu')(dense1)
+    probs = Dense(self.n_actions, activation='softmax')(dense2)
+    values = Dense(1, activation='linear')(dense2)
+    
+    actor = Model(inputs=[NN_input, delta], outputs=[probs])
 
+    actor.compile(optimizer=Adam(lr=self.alpha), loss='categorical_crossentropy')
+
+    critic = Model(inputs=[NN_input], outputs=[values])
+
+    critic.compile(optimizer=Adam(lr=self.beta), loss='mean_squared_error')
+
+    policy = Model(inputs=[NN_input], outputs=[probs])
+
+    return actor, critic, policy
 ```	
 ### choose action
 
