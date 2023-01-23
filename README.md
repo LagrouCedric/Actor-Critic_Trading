@@ -7,6 +7,16 @@
 #### With that API, you can get the OHLC values so the AI can predict an action at a certain moment and it can still learn something from it
 #### But to use this correctly it would be best to retrain or train extra with the newer data so it gets familiar with it, and to increase prediction succes.
 
+## Running the code
+#### To run the code, you can use a anaconda env, that's inside the Github project - Anaconda.yml
+
+
+
+# User Guideline
+#### Once you have the code running in e.g. a cloud environment and you have made it work with an API from a broker platform, you can trade using the predictions of the model, the model will keep improving a bit, but for further improvement, you will have to retraining or extra training the model extra, by running a bunch of episodes and republishing that better trained model
+
+
+
 # Environment
 #### based on: https://medium.com/coinmonks/deep-reinforcement-learning-for-trading-cryptocurrencies-5b5502b1ece1
 ## Features
