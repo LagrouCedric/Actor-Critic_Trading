@@ -170,6 +170,11 @@
 #### the actor critic is split into 3 networks: 'Policy', 'Actor' and 'Critic'
 #### simply said, the policy choses an action by having an actor picking an action he thinks is best and a critic network evaluating that certain action the actor picked
 
+## code:
+
+```{python}
+
+```	
 ## saving the agent
 #### I can easily save the 3 models in a folder by using the keras save ( & load) build in functions
 
