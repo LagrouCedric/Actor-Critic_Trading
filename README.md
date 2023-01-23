@@ -171,10 +171,14 @@
 #### simply said, the policy choses an action by having an actor picking an action he thinks is best and a critic network evaluating that certain action the actor picked
 
 ## code:
-
+#### the code is split into a couple functions
+### build actor critic network
 ```{python}
 
 ```	
+### choose action
+
+### learn
 ## saving the agent
 #### I can easily save the 3 models in a folder by using the keras save ( & load) build in functions
 
