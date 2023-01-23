@@ -96,7 +96,59 @@
         
 ```
 ### Get_reward
+#### this function calculates the reward, first of it checks the action.
+#### depending on the chosen action, you get a positive or negative reward, see code down below
+#### also the selling and buying happens here and the reward of action 2 ( sell) is calculated here by checking if the current price is higher or lower then the price of the last buy ( profit or loss)
+```{python}
+    def get_reward(self):
+        #reward function
+        if self.action == 0:
+            #hold do nothing
+            return -3
+        elif self.action == 1:
+            if self.invested > ((self.calc_current_worth()/4)*3):
+                return -25
+                # self.done = True
+            elif self.lastBuy > -60 or self.lastSold > -40:
+                return -25
+                # self.done = True
+            else:
+                #buy = invest 1/10 of non_invested money
+                to_invest = self.non_invested / 5
+                self.non_invested -= to_invest
+                amount = to_invest / self.current_price[0]
+                self.invested += to_invest
+                self.invested_amount += amount
+                self.lastBuy = 0
+                self.lastBuyPrice = self.current_price[0]
+                reward = 500
+        elif self.action == 2:
+            #sell first bought in array of invested
+            if self.lastBuy > -10 and self.lastSold > -20:
+                reward = -25
+            elif self.invested > 10:
+                amount = self.invested_amount
+                price_investment = self.invested
+                self.non_invested += amount * self.current_price[0]
+                self.invested_amount = 0
+                self.invested = 0
+                self.lastSold = 0
+                self.lastSoldPrice = self.current_price[0]
+                if ((amount * self.current_price[0]) - price_investment) > 0:
+                    reward = (((amount * self.current_price[0]) - price_investment))* 50
+                else:
+                    reward = (((amount * self.current_price[0]) - price_investment)) * 10
+            else:
+                #hold, do nothing, nothing to sell
+                return -25
+        
+        self.worth_history.append(self.calc_current_worth())
+        if reward > 0: 
+            return (reward) * ((self.calc_current_worth()/self.initial_investment)**2)
+        else:
+            return (reward) * ((self.calc_current_worth()/self.initial_investment)**2)
 
+```
 ### csv_to_dataframe
 
 # Agent
