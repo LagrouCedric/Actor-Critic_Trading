@@ -1,7 +1,11 @@
 # Research Project 
 ### Cedric Lagrou
 
-## Installation Guideline
+# Installation Guideline
+#### The project is a Reinforcement learning bot, which means, this has to still be trained to a dataset, the project has to be developed and progressed for the newer data, and upcoming data. 
+#### One way to do this is to publish this project using an API such as Kraken API to do all the buying and selling real time.
+#### With that API, you can get the OHLC values so the AI can predict an action at a certain moment and it can still learn something from it
+#### But to use this correctly it would be best to retrain or train extra with the newer data so it gets familiar with it, and to increase prediction succes.
 #### ToDo
 
 # Environment
