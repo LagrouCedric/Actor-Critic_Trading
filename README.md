@@ -150,6 +150,11 @@
 
 ```
 ### csv_to_dataframe
+#### In this function i make the dataframe that will be used in the training of the trading agent. This can vary upon the csv that is being used.
+#### the main things that are being done here are:
+#### - adding the macd and sma values to the dataframe
+#### - combining multiple csv's into one dataframe
+#### - Dropping rows with NaN values ( these can not be predicted )    
 
 # Agent
 
