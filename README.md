@@ -31,8 +31,10 @@
 #### I used the OHLC as features, because that's what represents the price of the currency at a certain time. The model can use this to help predict a good action for this timestamp.
 ![](./pics/OHCL.png)
 
-#### We also have some calculated features, this article helped me with some of them
+#### We also have some calculated features, these articles helped me picking some of them to test and use during the project
+#### https://www.coindesk.com/learn/3-indicators-beginner-crypto-traders-should-use-according-to-pros/
 #### https://academy.swissborg.com/en/learn/crypto-trading-indicators
+#### https://www.tradingview.com/scripts/buy-sell/
 #### From this article i used:
 #### -- Simple Moving Average (SMA)
 #### -- Moving Average Convergence Divergence (MACD)
