@@ -7,8 +7,12 @@
 #### With that API, you can get the OHLC values so the AI can predict an action at a certain moment and it can still learn something from it
 #### But to use this correctly it would be best to retrain or train extra with the newer data so it gets familiar with it, and to increase prediction succes.
 
+## Datasets
+#### you can use all sorts of datasets, the ones used by me were:
+#### BTC: https://www.kaggle.com/datasets/prasoonkottarathil/btcinusd
+#### ETH: https://support.kraken.com/hc/en-us/articles/360047124832-Downloadable-historical-OHLCVT-Open-High-Low-Close-Volume-Trades-data
 ## Running the code
-#### To run the code, you can use a anaconda env, that's inside the Github project - Anaconda.yml
+#### To  run the code, you can use a anaconda env, that's inside the Github project - Anaconda.yml
 
 
 
