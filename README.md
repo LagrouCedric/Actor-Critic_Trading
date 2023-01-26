@@ -179,6 +179,8 @@
 ## code:
 #### the code is split into a couple functions
 ### build actor critic network
+#### in this fuction we create the neural networks responsible for predicting the actions.
+#### we make an actor, critic and policy network for the actor critic implementation
 ```{python}
 def build_actor_critic_network(self):
     NN_input = Input(shape=(self.input_dims,))
@@ -201,9 +203,12 @@ def build_actor_critic_network(self):
     return actor, critic, policy
 ```	
 ### choose action
+#### the model returns a probability for each action, we then use the numpy random choice function to pick an action based on the probabilities
 
 ### learn
+#### the learn function is the most important function in the actor critic, it is responsible for updating the weights of the actor and critic networks.
 ## saving the agent
+
 #### I can easily save the 3 models in a folder by using the keras save ( & load) build in functions
 
 ## training the model
