@@ -233,8 +233,8 @@ def build_actor_critic_network(self):
 
 #### the trading bot went from an original investment of 20.000USD to a worth of 27.006, in about the timespan of 183 days doing an action every 5 minutes
 #### for comparison, buying on the first day and selling at the end of the 183 days, will result in a worth of 17.363.
-#### the best result i have had so far:
-![](./pics/BTC.png)
+#### tExample of the ETH trading:
+![](./pics/eth.png)
 # Community
 #### I also checked out how the community was doing arround crypto and specifically trading bots.
 #### I checked this reddit: https://www.reddit.com/r/algotrading/comments/y31xce/does_your_crypto_trading_bot_still_make_money_in/
@@ -242,3 +242,5 @@ def build_actor_critic_network(self):
 #### The more famous types like grid-trading, etc still work by the same principles, but the way the cryptoworld is changing the profits are less then before
 ####
 #### Reinforcement learning is a hard topic in the community, not a lot of people share specific things about crypto bots they made, the more traditional bots are still being talked about though.
+####
+#### I also made a community blogpost: https://medium.com/@cedric.lagrou/crypto-trading-with-reinforcement-learning-cf3b3364c6b
