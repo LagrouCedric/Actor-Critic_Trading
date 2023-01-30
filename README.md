@@ -207,12 +207,12 @@ def build_actor_critic_network(self):
 
 
 # Result
-## BTC
+## BTC & ETH
 #### The BTC trading bot, still has an urge to sell, this means, if the conditions are met it would rather trigger a sell action. Doing this doesn't meet the requirements, so I believe with further training the model will learn to deal with this, but with the time I had to work with, this seems like a good starting point.
 
 #### the trading bot went from an original investment of 20.000USD to a worth of 27.006, in about the timespan of 183 days doing an action every 5 minutes
 #### for comparison, buying on the first day and selling at the end of the 183 days, will result in a worth of 17.363.
-#### tExample of the ETH trading:
+#### Example of the ETH trading:
 ![](./pics/eth.png)
 # Community
 #### I also checked out how the community was doing arround crypto and specifically trading bots.
