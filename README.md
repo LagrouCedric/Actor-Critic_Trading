@@ -212,6 +212,10 @@ def build_actor_critic_network(self):
 
 #### the trading bot went from an original investment of 20.000USD to a worth of 27.006, in about the timespan of 183 days doing an action every 5 minutes
 #### for comparison, buying on the first day and selling at the end of the 183 days, will result in a worth of 17.363.
+####
+#### Models were trained approximately 20–24hours.
+#### ETH: went from initial investment 20.000 to 17991
+#### BTC: went from initial investment 20.000 to 27.006
 #### Example of the ETH trading:
 ![](./pics/eth.png)
 # Community
