@@ -130,10 +130,8 @@
                 return -25
         
         self.worth_history.append(self.calc_current_worth())
-        if reward > 0: 
-            return (reward) * ((self.calc_current_worth()/self.initial_investment)**2)
-        else:
-            return (reward) * ((self.calc_current_worth()/self.initial_investment)**2)
+        return (reward) * ((self.calc_current_worth()/self.initial_investment)**2)
+        
 
 ```
 ### csv_to_dataframe
@@ -225,3 +223,8 @@ def build_actor_critic_network(self):
 #### Reinforcement learning is a hard topic in the community, not a lot of people share specific things about crypto bots they made, the more traditional bots are still being talked about though.
 ####
 #### I also made a community blogpost: https://medium.com/@cedric.lagrou/crypto-trading-with-reinforcement-learning-cf3b3364c6b
+
+# Extra sources
+#### https://link.springer.com/article/10.1007/s10489-022-04322-5#Sec5
+#### https://www.tokenmetrics.com/blog/best-indicators-for-crypto-trading-and-analysis
+#### https://altfins.com/knowledge-base/chart-patterns/
