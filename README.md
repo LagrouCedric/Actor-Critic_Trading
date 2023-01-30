@@ -3,7 +3,7 @@
 
 
 # Environment
-#### based on: https://medium.com/coinmonks/deep-reinforcement-learning-for-trading-cryptocurrencies-5b5502b1ece1
+#### based on: H. Andey, “Deep Reinforcement Learning for Trading Cryptocurrencies,” Coinmonks, Jun. 17, 2022. https://medium.com/coinmonks/deep-reinforcement-learning-for-trading-cryptocurrencies-5b5502b1ece1 (accessed Jan. 05, 2023).
 ## Features
 ### full Feature list:
 #### 'open', 'High', 'Low', 'CLose', 'Invested money', 'non-invested', 'invested_amount of crypto', 'Unix Time', 'MACD', 'SMA60K', 'SMA30K', 'LastBuy', 'LastSold', 'LastBuyPrice', 'LastSoldPrice' 
@@ -13,9 +13,10 @@
 ![](./pics/OHCL.png)
 
 #### We also have some calculated features, these articles helped me picking some of them to test and use during the project
-#### https://www.coindesk.com/learn/3-indicators-beginner-crypto-traders-should-use-according-to-pros/
-#### https://academy.swissborg.com/en/learn/crypto-trading-indicators
-#### https://www.tradingview.com/scripts/buy-sell/
+#### K. Sandor, “3 Indicators Beginner Crypto Traders Should Use, According to Pros,” www.coindesk.com, Oct. 24, 2022. https://www.coindesk.com/learn/3-indicators-beginner-crypto-traders-should-use-according-to-pros/ (accessed Jan. 17, 2023).
+‌
+#### “What are the best crypto trading indicators?,” https://academy.swissborg.com. https://academy.swissborg.com/en/learn/crypto-trading-indicators (accessed Jan. 18, 2023)
+#### “Buy-sell — Indicators and Signals,” TradingView. https://www.tradingview.com/scripts/buy-sell/ (accessed Jan. 18, 2023)
 #### From this article i used:
 #### -- Simple Moving Average (SMA)
 #### -- Moving Average Convergence Divergence (MACD)
@@ -145,7 +146,7 @@
 
 ## Agent choice
 #### To choose a good reinforcement learning agent, i started with a simple implementation of a DQN agent and an actor critic.
-#### explained: https://medium.com/intro-to-artificial-intelligence/the-actor-critic-reinforcement-learning-algorithm-c8095a655c14
+#### explained: D. Karunakaran, “The actor-Critic Reinforcement Learning algorithm,” Intro to Artificial Intelligence, Sep. 30, 2020. https://medium.com/intro-to-artificial-intelligence/the-actor-critic-reinforcement-learning-algorithm-c8095a655c14 (accessed Jan. 08, 2023)
 #### The actor critic quickly learned a couple things, whilst the DQN was doing overfitting on one action or randomly picking things, it didn't learn well / quick enough to use this as an agent for this project.
 #### for the remainder of this project I will not focus on the DQN implementation, because the training time will make it harder to create and actor critic is an overal better option to use in this case
 
@@ -229,6 +230,6 @@ def build_actor_critic_network(self):
 #### I also made a community blogpost: https://medium.com/@cedric.lagrou/crypto-trading-with-reinforcement-learning-cf3b3364c6b
 
 # Extra sources
-#### https://link.springer.com/article/10.1007/s10489-022-04322-5#Sec5
-#### https://www.tokenmetrics.com/blog/best-indicators-for-crypto-trading-and-analysis
-#### https://altfins.com/knowledge-base/chart-patterns/
+#### Q. Sun and Y.-W. Si, “Supervised actor-critic reinforcement learning with action feedback for algorithmic trading,” Applied Intelligence, Dec. 2022, doi: 10.1007/s10489-022-04322-5 (accessed Jan. 27, 2023).
+#### “10 Best Indicators for Crypto Trading and Analysis in 2023,” Token Metrics. https://www.tokenmetrics.com/blog/best-indicators-for-crypto-trading-and-analysis (accessed Jan. 27, 2023).
+#### altFINS, “Chart Patterns,” altFINS. https://altfins.com/knowledge-base/chart-patterns/ (accessed Jan. 27, 2023).
