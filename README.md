@@ -230,6 +230,6 @@ def build_actor_critic_network(self):
 #### I also made a community blogpost: https://medium.com/@cedric.lagrou/crypto-trading-with-reinforcement-learning-cf3b3364c6b
 
 # Extra sources
-#### Q. Sun and Y.-W. Si, “Supervised actor-critic reinforcement learning with action feedback for algorithmic trading,” Applied Intelligence, Dec. 2022, doi: 10.1007/s10489-022-04322-5 (accessed Jan. 27, 2023).
+#### Q. Sun and Y.-W. Si, “Supervised actor-critic reinforcement learning with action feedback for algorithmic trading,” Applied Intelligence, Dec. 2022, https://link.springer.com/article/10.1007/s10489-022-04322-5#Sec5 (accessed Jan. 27, 2023).
 #### “10 Best Indicators for Crypto Trading and Analysis in 2023,” Token Metrics. https://www.tokenmetrics.com/blog/best-indicators-for-crypto-trading-and-analysis (accessed Jan. 27, 2023).
 #### altFINS, “Chart Patterns,” altFINS. https://altfins.com/knowledge-base/chart-patterns/ (accessed Jan. 27, 2023).
